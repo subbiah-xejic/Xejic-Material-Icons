@@ -8,13 +8,12 @@
 
 .xe {
     display: inline-block;
-    font-family: 'MaterialIcons-Regular';
+    font: normal normal normal 14px/1 'MaterialIcons-Regular';
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font-style: normal;
 }
-
 .xe-18 {
     font-size: 18px;
 }
