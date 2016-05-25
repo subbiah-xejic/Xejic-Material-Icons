@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html ng-app="XejicIcon">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Xejic Icon">
+    <meta name="keywords" content="Icon, CSS, web development">
+    <meta name="author" content="Subbiah Sudhan">
+    <title>Xejic Icon</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/xejic-icon.css" rel="stylesheet" />
+    <script src="assets/angular.min.js"></script>
+    <style>
+        .icon-layout {
+            background-color: #fbfbfb;
+            padding: 15px;
+            font-size: 24px;
+            margin: 15px 0px;
+            height: 125px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" ng-controller="IconController as ic">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center">Xejic Icon</h2>
+            </div>
+            <div class="col-xs-12">
+                <div class="input-group">
+                    <span class="input-group-addon" id="search-addon">@</span>
+                    <input type="text" class="form-control" placeholder="Search" ng-model="ic.searchIcon">
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 text-center" ng-repeat="icon in ic.iconList | filter: ic.searchIcon">
+                <div class="icon-layout">
+                    <i class="xe xe-{{icon}}"></i>
+                    <h4>{{icon}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        angular.module('XejicIcon', [])
+       .controller('IconController', function ($http) {
+           var self = this;
+           this.iconList = [];
+           $http.get("/icon-list.json").then(function (result) {
+               self.iconList=result.data;
+           });
+       });
+    </script>
+</body>
+</html>
