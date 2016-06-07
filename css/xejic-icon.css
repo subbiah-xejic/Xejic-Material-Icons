@@ -14,6 +14,7 @@
     -webkit-font-smoothing: antialiased;
     font-style: normal;
 }
+
 .xe-18 {
     font-size: 18px;
 }
@@ -3639,46 +3640,205 @@ edit:before {
     content: '\e16b';
 }
 
-.xe-whatshot {
+.xe-whatshot:before {
     content: '\e80e';
 }
 
-.xe-widgets {
+.xe-widgets:before {
     content: '\e1bd';
 }
 
-.xe-wifi {
+.xe-wifi:before {
     content: '\e63e';
 }
 
-.xe-wifi-lock {
+.xe-wifi-lock:before {
     content: '\e1e1';
 }
 
-.xe-wifi-tethering {
+.xe-wifi-tethering:before {
     content: '\e1e2';
 }
 
-.xe-work {
+.xe-work:before {
     content: '\e8f9';
 }
 
-.xe-wrap-text {
+.xe-wrap-text:before {
     content: '\e25b';
 }
 
-.xe-youtube-searched-for {
+.xe-youtube-searched-for:before {
     content: '\e8fa';
 }
 
-.xe-zoom-in {
+.xe-zoom-in:before {
     content: '\e8ff';
 }
 
-.xe-zoom-out {
+.xe-zoom-out:before {
     content: '\e900';
 }
 
-.xe-zoom-out-map {
+.xe-zoom-out-map:before {
     content: '\e56b';
+}
+
+
+/* June 7, 2016 updates*/
+
+.xe-branding-watermark:before {
+    content: '\e06b';
+}
+
+.xe-bubble-chart:before {
+    content: '\e6dd';
+}
+
+.xe-burst-mode:before {
+    content: '\e43c';
+}
+
+.xe-call-to-action:before {
+    content: '\e06c';
+}
+
+.xe-delete-forever:before {
+    content: '\e92b';
+}
+
+.xe-delete-sweep:before {
+    content: '\e16c';
+}
+
+.xe-do-not-disturb-off:before {
+    content: '\e643';
+}
+
+.xe-do-not-disturb-on:before {
+    content: '\e644';
+}
+
+.xe-euro-symbol:before {
+    content: '\e926';
+}
+
+.xe-ev-station:before {
+    content: '\e56d';
+}
+
+.xe-featured-video:before {
+    content: '\e06e';
+}
+
+.xe-first-page:before {
+    content: '\e5dc';
+}
+
+.xe-g-translate:before {
+    content: '\e927';
+}
+
+.xe-last-page:before {
+    content: '\e5dd';
+}
+
+.xe-low-priority:before {
+    content: '\e16d';
+}
+
+.xe-monetization-on:before {
+    content: '\e263';
+}
+
+.xe-multiline-chart:before {
+    content: '\e6df';
+}
+
+.xe-note:before {
+    content: '\e06f';
+}
+
+.xe-pie-chart:before {
+    content: '\e6c4';
+}
+
+.xe-pie-chart-outlined:before {
+    content: '\e6c5';
+}
+
+.xe-priority-high:before {
+    content: '\e645';
+}
+
+.xe-remove-shopping-cart:before {
+    content: '\e928';
+}
+
+.xe-restaurant:before {
+    content: '\e56c';
+}
+
+.xe-restore-page:before {
+    content: '\e929';
+}
+
+.xe-sentiment-dissatisfied:before {
+    content: '\e811';
+}
+
+.xe-sentiment-neutral:before {
+    content: '\e812';
+}
+
+.xe-sentiment-satisfied:before {
+    content: '\e813';
+}
+
+.xe-sentiment-very-dissatisfied:before {
+    content: '\e814';
+}
+
+.xe-sentiment-very-satisfied:before {
+    content: '\e815';
+}
+
+.xe-show-chart:before {
+    content: '\e6e1';
+}
+
+.xe-speaker-notes-off:before {
+    content: '\e92a';
+}
+
+.xe-streetview:before {
+    content: '\e56e';
+}
+
+.xe-subway:before {
+    content: '\e56f';
+}
+
+.xe-title:before {
+    content: '\e264';
+}
+
+.xe-train:before {
+    content: '\e570';
+}
+
+.xe-tram:before {
+    content: '\e571';
+}
+
+, .xe-transfer-within-a-station:before {
+    content: '\e572';
+}
+
+.xe-video-call:before {
+    content: '\e070';
+}
+
+.xe-video-label:before {
+    content: '\e071"';
 }
